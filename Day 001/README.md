@@ -1,4 +1,4 @@
-##Day 1
+# Day 1
 Day 1 is naturally the simplest of the days. I have only one project for this day.
 
 ##Team Name Generator
