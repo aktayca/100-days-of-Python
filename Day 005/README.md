@@ -16,5 +16,5 @@ This version is the Harder version according to Angela Yu, where you need to app
 
 
 
-!\[Password Generator Screenshot](images/Day%20005%20-%20Password%20Generator.png)
+![Password Generator Screenshot](images/Day 005 - Password Generator.png)
 
