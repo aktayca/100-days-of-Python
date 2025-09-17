@@ -16,12 +16,12 @@ def caesar(original_text, shift_amount, encode_or_decode):
     print(f"Here is the {encode_or_decode}d result: {output_text}")
 
 from art import logo
+print(logo)
 cycle= 'y'
 while cycle == 'y':
-    print(logo)
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
     caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
-    cycle = input("Type 'y' if you want to use the cipher again.")
+    cycle = input("Type 'y' if you want to use the cipher again.\n")
