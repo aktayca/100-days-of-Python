@@ -7,6 +7,8 @@ Here comes every developer's inevitable project: **T H E**  **C A L C U L A T 
 A simple calculator that performs the four basic arithmetic operations: addition, subtraction, multiplication, and division.
 Each operation is written as a separate function that returns the result, which was good practice for defining functions with parameters and using return values to keep the code reusable.
 
+[Click Here to Run](https://www.programiz.com/online-compiler/9gyAP5O0IukLM)
+
 ![Calculator Screenshot](images/calculator.png)
 
 ## Leap Year Checker
