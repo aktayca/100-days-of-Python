@@ -6,6 +6,13 @@ It uses lists to represent a deck of cards and functions to handle score calcula
 
 I realized that I can get lost in the loops and I am not at the stage where I can properly decide whether or not I should create a new function or just write a loop for the game logic.
 
+### Features
+
+- Simulates a simplified Blackjack game against the computer
+- Handles Ace values flexibly (1 or 11)
+- Automatic dealer logic to draw until reaching 17+
+- Detects Blackjack, busts, and ties
+
 [Click Here To Run](https://www.programiz.com/online-compiler/7QRZBuPUujDVV)
 
 ![Blackjack Screenshot](images/blackjack.png)

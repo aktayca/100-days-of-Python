@@ -10,6 +10,12 @@ The player selects a difficulty level (*easy* or *hard*), which determines the n
 
 The game provides feedback after each guess, telling the player if it’s **too high** or **too low**, until they either guess correctly or run out of attempts.  
 
+### Features
+- Randomly selects a number between 1 and 100
+- Two difficulty levels (Easy: 10 attempts, Hard: 5 attempts)
+- Tracks remaining attempts dynamically
+- Provides feedback if the guess is too high or too low
+
 [Click Here To Run](https://www.programiz.com/online-compiler/2POD9hcKVlE98)
 
 ![Number Guessing Screenshot](images/numberGuessing.png)
