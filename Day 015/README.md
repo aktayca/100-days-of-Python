@@ -1,5 +1,7 @@
 # Day 015
 
+This day officially marks the beginning of the intermediate tutorials. Tomorrow is Object Oriented Programming which I know nothing about. Scary but exciting!
+
 ## Coffee Machine  
 This program simulates a coffee machine. Users can choose drinks, pay with coins, and the machine checks resources before serving.  
 
