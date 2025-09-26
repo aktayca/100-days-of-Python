@@ -2,7 +2,7 @@
 
 ## Quiz Game
 
-A simple quiz game built using **OOP principles**, where a `Question` class stores the text and answer, and a `QuizBrain` class handles the game logic. One can simply change the question list by getting a new set of questions in JSON format from the [Open Trivia Database](opentdb.com) API. 
+A simple quiz game built using **OOP principles**, where a `Question` class stores the text and answer, and a `QuizBrain` class handles the game logic. One can simply change the question list by getting a new set of questions in JSON format from the [Open Trivia Database](https://opentdb.com/) API.
 
 If I come back to this project in the future, I'd like to automate the process of getting new API links from the OpenTDB and formatting the question data.  
 
