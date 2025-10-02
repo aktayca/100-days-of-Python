@@ -1,6 +1,6 @@
 from turtle import Screen, Turtle
 
-STARTING_POSITIONS = [(-40,0), (-20,0), (0,0)]
+STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
 
 class Snake:
@@ -10,13 +10,18 @@ class Snake:
         self.head = self.segments[0]
 
     def create_snake(self):
-        for pos in STARTING_POSITIONS:
+        for position in STARTING_POSITIONS:
+            self.add_segment(position)
+
+    def add_segment(self, position):
             new_segment = Turtle("square")
             new_segment.color("white")
             new_segment.pu()
-            new_segment.goto(pos)
+            new_segment.goto(position)
             self.segments.append(new_segment)
 
+    def extend(self):
+        self.add_segment(self.segments[-1].position())
 
     def move(self):
         for seg_num in range((len(self.segments) -1) ,0,-1):
@@ -40,9 +45,14 @@ class Snake:
         if self.head.heading() != 90:
             self.head.setheading(270)
 
-    def game_over(self):
-        if self.head.xcor() >= 300:
+    def collision(self):
+        #Wall Collision
+        if self.head.xcor() >= 290 or self.head.xcor() <= -290:
             return True
-        elif self.head.ycor() >= 300:
+        elif self.head.ycor() >= 290 or self.head.ycor() <= -290:
             return True
-    
+        
+        #Tail Collision
+        for segment in self.segments[1:]:
+            if self.head.distance(segment) <10:
+                return True
