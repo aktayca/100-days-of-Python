@@ -28,7 +28,7 @@ while game_is_on:
     score.keep_score()
     if snake.collision():
         snake.head.home()
-        snake.head.write("Game Over!", True, align="center")
+        snake.head.write("GAME OVER", True, align="center", font=("Courier", 48, "bold"))
         break
 
     #Food Acquired
