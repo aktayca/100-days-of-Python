@@ -1,18 +1,27 @@
-# Day 020 & 021
+# Day 20 & 21
 
-## Snake Game
+## Snake
 
-Recreation of the classic **Snake game** using Turtle graphics and OOP.  
-These two days cover building the snake, adding movement, and introducing gameplay mechanics.
+Guide a growing snake to collect food while avoiding walls and yourself. Classic arcade gameplay rebuilt from scratch.
+
+Two days focused on object coordination, movement systems, and game mechanics.
 
 ### Features
 
-- Snake built from multiple segments  
-- Smooth movement with update cycles  
-- User control with arrow keys (Up, Down, Left, Right)  
-- Food spawns at random locations  
-- Snake grows longer when eating food  
-- Score tracking and display  
-- Collision detection with walls and snake’s own body  
+- Smooth segment-based snake movement
+- Arrow key controls with 180-degree turn prevention
+- Random food spawning with growth mechanics
+- Progressive speed increase with score
+- Precise wall and self-collision detection
 
-![Snake Game Screenshot](images/snakeGameFinal.png)
+### Technical Implementation
+
+**Segment Coordination:** Each body part follows the previous segment's position for fluid movement.
+
+**Input Safety:** Direction logic prevents 180-degree instant-collision turns.
+
+**Collision Systems:** Boundary checks with size-adjusted margins and efficient segment distance calculation.
+
+**Performance Optimization:** Screen tracer controls eliminate flickering during multi-segment updates.
+
+![Snake Screenshot](images/snakeGame.png)
