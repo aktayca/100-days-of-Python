@@ -1,7 +1,9 @@
 from turtle import Screen, Turtle
+import time
 
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
+
 
 class Snake:
     def __init__(self):
@@ -56,3 +58,11 @@ class Snake:
         for segment in self.segments[1:]:
             if self.head.distance(segment) <10:
                 return True
+            
+    def reset(self):
+        for segment in self.segments:
+            segment.hideturtle()
+        self.segments.clear()
+        
+        self.create_snake()
+        self.head = self.segments[0]

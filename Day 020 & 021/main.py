@@ -9,34 +9,33 @@ ekran.setup(width=600, height=600)
 ekran.bgcolor("black")
 ekran.title("My Snake Game")
 ekran.tracer(0)
-snake = snake.Snake()
+snakey = snake.Snake()
 food = Food()
 score = Scoreboard()
 
 ekran.listen()
-ekran.onkey(key="Up", fun= snake.up)
-ekran.onkey(key="Down", fun= snake.down)
-ekran.onkey(key="Left", fun= snake.left)
-ekran.onkey(key="Right", fun= snake.right)
+ekran.onkey(key="Up", fun= snakey.up)
+ekran.onkey(key="Down", fun= snakey.down)
+ekran.onkey(key="Left", fun= snakey.left)
+ekran.onkey(key="Right", fun= snakey.right)
 # Game Loop
 game_is_on = True
 sleep_time = 0.05
 while game_is_on:
     ekran.update()
-    sleep(sleep_time)  
-    snake.move()
+    sleep(sleep_time) 
+    snakey.move()
     score.keep_score()
-    if snake.collision():
-        snake.head.home()
-        snake.head.write("GAME OVER", True, align="center", font=("Courier", 48, "bold"))
-        break
-
+    if snakey.collision():
+        score.save_high_score()
+        score.reset()
+        snakey.reset()
+        sleep_time = 0.05
     #Food Acquired
-    if snake.head.distance(food) < 17: 
+    if snakey.head.distance(food) < 17: 
         food.refresh()
         score.score += 1
-        snake.extend()
+        snakey.extend()
         sleep_time -= 0.0005
-    
     
 ekran.exitonclick()
