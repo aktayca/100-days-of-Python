@@ -8,5 +8,10 @@ __pycache__/
 **/env/
 **/venv/
 
-# VS Code settings
+# IDE files
 .vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
