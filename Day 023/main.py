@@ -14,7 +14,7 @@ screen.tracer(0)
 score = Scoreboard()
 player = Player()
 cars = CarManager()
-
+screen.bgcolor("lightgray")
 screen.listen()
 screen.onkey(fun=player.move, key= "Up")
 
