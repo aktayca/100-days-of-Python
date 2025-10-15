@@ -1,4 +1,4 @@
-# Day 29
+# Day 29 & 30
 
 ## Password Manager
 
@@ -6,7 +6,7 @@ A secure desktop application for generating and storing passwords with automatic
 
 A practical security tool combining password generation, file management, and user experience design.
 
-### Features
+### Features added in Day 29
 
 - Strong password generation with letters, numbers, and symbols
 - Automatic clipboard copying for immediate use
@@ -14,14 +14,21 @@ A practical security tool combining password generation, file management, and us
 - Confirmation dialogs before saving sensitive information
 - Persistent storage in organized text file format
 
+### Features added in Day 30
+
+- Added Search button to find saved passwords
+- JSON file storage instead of text file
+- Error handling for missing data file
+- Improved data structure for better organization
+
 ### Technical Implementation
 
 **Password Generation Engine:** Custom algorithm with controlled character distribution and secure randomization.
 
+**Data Storage:** JSON file system with dictionary merging to preserve existing entries.
+
+**Search Function:** File exception handling and nested dictionary lookups.
+
 **Clipboard Integration:** Automatic password copying using pyperclip for seamless user workflow.
-
-**Data Validation System:** Comprehensive input checking with user-friendly dialog feedback.
-
-**File Management:** Safe append-mode writing with structured data formatting for easy retrieval.
 
 ![Password Manager](images/passwordManager.png)
