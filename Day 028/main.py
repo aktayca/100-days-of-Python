@@ -86,7 +86,7 @@ def count_down(count):
         count_min = f"0{count_min}"
         
     if count > 0:
-        window.after(10, count_down, count-1)
+        window.after(1000, count_down, count-1)
     else:
         start_timer()
 
